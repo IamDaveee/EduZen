@@ -11,6 +11,42 @@ header {
     padding: 1rem;
     text-align: center;
 }
+header{
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    font-size: 38px;
+    text-align: center;
+    margin: 20px;
+    color: white;
+}
+#edu{
+    border-top: 5px white solid;
+    border-left: 5px white solid;
+    padding: .3rem 0 0 .3rem;
+}
+#zen{
+    border-right: 5px white solid;
+    border-bottom: 5px white solid;
+    padding: 0 .3rem .3rem 0;
+}
+
+.navi{
+    width:  100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+}
+p{
+    font-size: 24px;
+    color: white;
+}
+p a{
+    text-decoration: underline;
+    color: white;
+    margin-bottom: 20px;
+}
 
 section {
     margin: 20px;
