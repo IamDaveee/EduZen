@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tankolás nyilvántartó</title>
+    <link rel="stylesheet" href="tankolas.css">
+</head>
+<body>
+    <header>
+        <h1>Tankolás nyilvántartó</h1>
+    </header>
+
+    <section>
+        <h2>Új tankolás rögzítése</h2>
+        <form id="fuelForm">
+            <label for="date">Dátum:</label>
+            <input type="date" id="date" required><br>
+
+            <label for="amount">Tankolt üzemanyag (liter):</label>
+            <input type="number" id="amount" required><br>
+
+            <label for="price">Fizetett összeg (Ft):</label>
+            <input type="number" id="price" required><br>
+
+            <label for="odo">Kilométeróra állása:</label>
+            <input type="number" id="odo" required><br>
+
+            <button type="submit">Rögzít</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Tankolási adatok</h2>
+        <table id="fuelData">
+            <thead>
+                <tr>
+                    <th>Dátum</th>
+                    <th>Üzemanyag (liter)</th>
+                    <th>Összeg (Ft)</th>
+                    <th>Kilométeróra</th>
+                    <th>Megtett km</th>
+                    <th>Átlag fogyasztás (l/100km)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Itt lesznek a tankolási adatok -->
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Szűrés dátum alapján</h2>
+        <label for="startDate">Kezdő dátum:</label>
+        <input type="date" id="startDate">
+
+        <label for="endDate">Végdátum:</label>
+        <input type="date" id="endDate">
+
+        <button id="filter">Szűrés</button>
+
+        <div id="monthlySpendings">
+            <h3>Havi költések</h3>
+            <ul id="spendingsList">
+                <!-- Havi költések itt jelennek meg -->
+            </ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
